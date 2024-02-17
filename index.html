@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title> First App By me</title>
+    <style>
+        *{font-size: 50px; font-family:Century;}
+        body{background-color: lightblue; }
+    </style>
+</head>
+<body>
+    <center>
+        <h1> Welcome App </h1>
+        <h2 id="id_msg"/>
+        <script>
+            let msg = document.getElementById("id_msg");
+            let d=new Date();
+            let hr = d.getHours();
+            let ans = "";
+            if (hr<16) ans="Good Morning";
+            else if (hr<16) ans="Good Afternoon";
+            else ans="Good Evening";
+            msg.innerHTML=ans;
+        </script>
+    </center>
+</body>
+</html>
